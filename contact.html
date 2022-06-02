@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Florica Floreanu Broker Contact</title>
+    <meta name="description" content="Florica Floreanu home page." />
+    <meta name="keywords" content="Florica Floreanu, real estate" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Florica Floreanu Broker</h1>
+        <aside>
+            <figure>
+              <span class="agentPhoto">
+                <img src="images/AgentPic.jpg" width="90" height="90" alt="Florica Floreanu">
+              </span>
+              <div class="caption">
+                Phone: <a href=":tel:4165674733">(416) 567-4733</a><br>
+                Email: <a href="mailto:flofloreanu@gmail.com">flofloreanu@gmail.com</a>
+              </div>
+            </figure>
+          </aside>
+      </header>
+      <nav>
+        <ul>
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li id="page"><a href="contact.html">Contact</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+        <div class="company">
+            <img src="images/remax_logo.png" />
+        </div>
+      </nav>
+      <main>
+        <div class="main_content">
+            <h2>Contact Us</h2>
+            <p>Please fill out the following form - we will contact you within 1 business day.</p>
+            <form method="post" action="mailto:flofloreanu@gmail.com">
+                <label>First Name</label><br/>
+                <input type="text" name="first_name" required /><br/>
+                <label>Last Name</label><br/>
+                <input type="text" name="last_name" required /><br/>
+                <label>Phone Number</label><br/>
+                <input type="text" name="phone_number"><br/>
+                <label>Email</label><br/>
+                <input type="email" name="email" required /><br/>
+                <label>Property Type:</label><br/>
+                <label><input type="radio" name="property_type" value="house" checked> House</label> &nbsp; <label><input type="radio" name="property_type" value="condominium"> Condominium</label><br />
+                <label>Bedrooms: </label>&nbsp; <select name="bedrooms"><option value="Not selected">------</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                </select><br/>
+                <label>Bathrooms:</label> <select name="bathrooms"><option value="Not selected">------</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                </select><br/>
+                <label>Max Price</label><br/><input name="max_price" type="range" min="0" max="1000000" value="500000" 
+                onchange="priceInput.innerText='$'+value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')"><span id="priceInput">$500,000</span><br/>
+                <label>Additional Comments</label><br/>
+                <textarea name="comments" rows="5" cols="29"></textarea><br /><br/>
+                <input type="reset" name="reset" id="reset_button" value="Clear Form" onclick="priceInput.innerText='$500,000'" />
+                <input type="submit" name="submit" id="submit_button" value="Submit Form" />
+          </form>
+        </div>
+      </main>
+      <footer>&copy;&nbsp;Copyright Florance Floreanu - Term Project - COMP213 - Fall 2019</footer>
+    </div>
+  </body>
+</html>
